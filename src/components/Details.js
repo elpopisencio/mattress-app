@@ -51,7 +51,7 @@ export const Details = ({ cart, setCart, mattresses }) => {
             </div>
             <Rating mattresses={mattresses} type={type} />
             <button
-              class="button is-fullwidth"
+              className="button is-fullwidth"
               style={{
                 backgroundColor: "#d4aa63",
                 color: "white",

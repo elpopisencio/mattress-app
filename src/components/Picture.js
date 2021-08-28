@@ -1,5 +1,5 @@
 export const Picture = ({ image }) => (
-  <figure class="image is-16by9">
+  <figure className="image is-16by9">
     <img src={image} alt="mattress" />
   </figure>
 );

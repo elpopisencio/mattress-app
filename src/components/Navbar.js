@@ -2,10 +2,10 @@ import { assets } from "../assets";
 
 export const Navbar = ({ cartItems }) => {
   return (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="container">
         <div
-          class="navbar-brand"
+          className="navbar-brand"
           style={{
             display: "flex",
             flexDirection: "row",
@@ -15,9 +15,9 @@ export const Navbar = ({ cartItems }) => {
           }}
         >
           <img src={assets.logo} width="180" height="50" alt="saatva" />
-          <button class="button is-large" style={{ borderWidth: 0 }}>
-            <span class="icon is-large">
-              <i class="fas fa-shopping-cart"></i>
+          <button className="button is-large" style={{ borderWidth: 0 }}>
+            <span className="icon is-large">
+              <i className="fas fa-shopping-cart"></i>
             </span>
             <span
               style={{

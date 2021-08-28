@@ -4,10 +4,11 @@ export const SelectType = ({ setType, type, mattresses }) => {
       <h3 className="subtitle is-left" style={{ marginBottom: ".5rem" }}>
         SELECT MATTRESS TYPE
       </h3>
-      <div class="field has-addons">
+      <div className="field has-addons">
         {Object.keys(mattresses).map((currentType) => (
           <button
-            class="button is-fullwidth"
+            key={currentType}
+            className="button is-fullwidth"
             style={{
               backgroundColor: type === currentType && "#a6a19a",
               color: type === currentType && "white",
