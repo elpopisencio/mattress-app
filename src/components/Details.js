@@ -23,7 +23,10 @@ export const Details = ({ cart, setCart, mattresses }) => {
       <div className="container">
         <div className="columns">
           <div className="column">
-            <Picture image={assets[mattresses[type].imageFileName]} />
+            <Picture
+              image={assets[mattresses[type].imageFileName]}
+              key={type}
+            />
           </div>
           <div className="column">
             <h1
