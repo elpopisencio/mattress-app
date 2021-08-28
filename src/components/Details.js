@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { assets } from "../assets";
 import { Picture } from "./Picture";
+import { Rating } from "./Rating";
 import { SelectType } from "./SelectType";
 
 function numberWithCommas(x) {
@@ -37,7 +38,7 @@ export const Details = ({ cart, setCart, mattresses }) => {
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "space-between",
-                margin: "2rem 0",
+                margin: "1rem 0",
               }}
             >
               <p>
@@ -45,6 +46,7 @@ export const Details = ({ cart, setCart, mattresses }) => {
               </p>
               <p>${numberWithCommas(mattresses[type].price)}</p>
             </div>
+            <Rating mattresses={mattresses} type={type} />
             <button
               class="button is-fullwidth"
               style={{
